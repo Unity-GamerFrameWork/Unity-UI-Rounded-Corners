@@ -1,46 +1,39 @@
 # Unity-UI-Rounded-Corners
 
-These components and shaders allow you to add rounded corners to UI elements!
+这些组件和着色器可以让你为 UI 元素添加圆角！
 
 
 ---
 
 ![](title.gif)
 
-## How to install
-### Option 1: Package Manager (Unity 2019.3 and higher)
+## 如何安装
+### 步骤 1：软件包管理器（Unity 2019.3 及更高版本）
 ![](how-to-install.gif)
-URL to copypaste: 
+要复制粘贴的网址：
 ```
-https://github.com/kirevdokimov/Unity-UI-Rounded-Corners.git
-```
-
-### Option 2: Package Manager (Manual)
-- Open `%projectname%/Packages/manifest.json`
-- Add the following to the dependencies section:
-```
-"com.nobi.roundedcorners": "https://github.com/kirevdokimov/Unity-UI-Rounded-Corners.git"
+https://github.com/Unity-GamerFrameWork/Unity-UI-Rounded-Corners.git
 ```
 
-## How to use
-#### Symmetrical roundness
-- Add `ImageWithRoundedCorners` component to a GameObject with an `Image`
-- Adjust `Radius` property
-#### Certain roundness value for each corner
-- Add `ImageWithIndependentRoundedCorners` to a GameObject with an `Image`
-- Adjust `r` Vector4 property. Each vector component represent radius, clockwise, starting with top-left corner
-#### Important thing
-If you need to add or change the image at runtime, call `Validate()` and then `Refresh()` to update the materials.
+## 如何使用
+#### 对称的圆形
+- 为带有 `Image` 游戏对象添加 `ImageWithRoundedCorners` 组件
+- 调整 `Radius` 属性
+#### 每个角都具有一定的圆度值
+- 将 `ImageWithIndependentRoundedCorners` 添加到带有 `Image` 游戏对象中
+- 调整 `r` Vector4 属性。每个向量分量表示半径，顺时针方向，从左上角开始。
+#### 特别注意
+如果需要在运行时添加或更改图像，请 `Validate()` ，然后 `Refresh()` 来更新材质。
 
 
 # Features
-## Changing roundness separately or all at once
+## 单独或一次性改变圆度
 ![](separate-roundness.gif)
-## Keeps round while resizing
+## 调整尺寸时保持圆形
 ![](gif-01.gif)
-## Better quality than sprites
+## 比精灵图质量更好
 ![](image-00.png)
-## Supports Unity Mask
+## 支持 Unity Mask
 ![](gif-02.gif)
-## Supports Tint
+## 支持着色
 ![](gif-04.gif)
